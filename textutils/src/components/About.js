@@ -15,7 +15,7 @@ export default function About() {
         if (myStyle.color === "black") {
             setMyStyle({
                 color: 'white',
-                backgroundColor: 'black',
+                backgroundColor: '#042743',
                 border: '2px solid white'
             })
             setBtnText("Enable Light Mode")
