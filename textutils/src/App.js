@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -47,9 +47,10 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route exatc path="/about" element={<About />}></Route>
+            <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />}></Route>
           </Routes>
+          {/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} /> */}
           {/* <About /> */}
         </div>
       </Router>
